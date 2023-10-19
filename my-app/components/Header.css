@@ -1,0 +1,28 @@
+/* Header.css */
+.header {
+    background-color: darkblue;
+    padding: 10px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+  }
+  
+  .navbar-item {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  /* Add responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .navbar {
+      justify-content: center;
+    }
+  
+    .navbar-item {
+      margin: 0 10px;
+    }
+  }
+  

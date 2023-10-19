@@ -1,0 +1,58 @@
+/* Servicessection.css */
+.new-container {
+    max-width: 100%; /* Make the container full width */
+    padding: 20px;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .new-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .new-hety {
+    display: flex; /* Use flexbox to make items cover the whole width */
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .new-service-item {
+    width: calc(25% - 20px); /* Calculate the width for four items with spacing */
+    background: #f2a154; /* Attractive light orange background */
+    border: 2px solid #d9853b; /* Darker border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px;
+    text-align: center;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+    cursor: pointer;
+    color: #fff; /* White text color */
+    font-size: 1.5rem; /* Larger font size */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 10px; /* Add spacing between items */
+  }
+  
+  .new-service-item:hover {
+    background: #d9853b; /* Darker orange background on hover */
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .new-container {
+      padding: 10px;
+    }
+  
+    .new-service-item {
+      padding: 20px;
+      font-size: 1.3rem;
+      width: calc(50% - 20px); /* Two items per row on smaller screens */
+    }
+  }
+  

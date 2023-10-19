@@ -1,0 +1,27 @@
+/* Header.css */
+.header {
+  background-color: darkblue;
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar-item {
+  font-size: 16px;
+  color: aliceblue;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar-item {
+    margin: 0 10px;
+  }
+}

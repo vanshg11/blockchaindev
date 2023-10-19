@@ -1,0 +1,93 @@
+/* Navbar.css */
+/* Navbar.css */
+.navbar {
+    /* background-color: darkblue; */
+    position: relative;
+    top: 0;
+    z-index: 100;
+    padding: 10px 0;
+    margin: 0 auto; /* Add this line to center the navbar horizontally */
+  }
+  
+  .nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar.css */
+.nav-item {
+    margin: 0 15px;
+    position: relative;
+    transition: all 1s ease; /* Add this line */
+    font-size: 12px;
+    
+  }
+  
+  
+  .nav-item a {
+    color: black;
+    text-decoration: none;
+    font-size: 15.6px;
+    transition: color 0.3s ease;
+  }
+  .nav-item a:hover {
+    color: aqua;
+  }
+  
+  /* Style the dropdown menu */
+ /* Navbar.css */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 200px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    border-radius: 4px;
+    transform: translateY(10px); /* Adjust the 'translateY' value to move the dropdown lower */
+    white-space: nowrap; /* Prevent line breaks */
+
+  }
+  
+  /* Rest of your CSS styles */
+  
+  
+  /* Navbar.css */
+.nav-item a::after {
+    content: "\2193"; /* Unicode arrow down symbol ↓ */
+    display: block;
+    margin-top: 5px; /* Adjust the spacing between text and arrow */
+    color: transparent; /* Initially, make the arrow transparent */
+    transition: color 0.3s ease; /* Add a smooth transition for color changes */
+    text-align: center; /* Add a smooth transition for color changes */
+  }
+  /* Navbar.css */
+.nav-item a:hover::after {
+    color: black; /* Change the arrow color to black when hovering */
+  }
+  
+  .nav-item:hover .dropdown-content {
+    display: block;
+    top: 100%;
+    left: 0;
+    color: aqua;
+    transform: translateY(-2px); /* Add this line to move the item slightly up */
+
+  }
+  
+  /* Add responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .nav-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-item {
+      margin: 10px 0;
+    }
+  }
+  
